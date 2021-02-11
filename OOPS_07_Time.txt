@@ -1,0 +1,33 @@
+A class called COJ_07_Time is given to you.  The task is to create and return a new time object in terms of hours,minutes and seconds by adding two COJ_07_Time objects.
+
+Define the following for the class.
+
+Attributes :
+	int : hh,mm,ss as private
+
+Constructor :
+	default : Create a public default constructor. Initialize all attributes to 0.
+	paramterized : Create a public parameterized constructor for hours,minutes and seconds in the same sequence.
+
+Methods :
+	Name of the method : show 
+	Return Type 	: void
+	Modifier	: public
+	Task : It must display the time in hours:minutes:seconds format. 
+	
+	Name Of the method : add  
+	Return Type 	: COJ_07_Time
+	Modifiers:	: public,static
+	Arguments	: 2 COJ_07_Time arguments.
+	Task		: Add the time
+
+	Example : 
+    Input
+		time 1 : 2:30:40
+		time 2 : 4:40:21 
+
+	output : 7:11:1
+	
+Write main class to test the code.
+	
+

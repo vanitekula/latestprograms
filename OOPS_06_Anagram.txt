@@ -1,0 +1,22 @@
+In the given class COJ_06_Anagram.java, implement the method findAnagrams() such that it finds all anagram sets from a list of words. 
+For the following 
+
+input: listen, silent, part, leloh, trap, tensil, hi, prat, hello:
+
+Output should be: 
+{listen,silent,tensil} 
+{part,trap,prat} 
+{leloh,hello}
+
+
+Note the following:
+
+   1. If a word has no anagrams, it is not listed in the output.
+
+   2. If a word appears many times in the input, it should be listed only once in the output.
+
+   3. Output format is as shown above. Each list of anagrams is enclosed by flower braces and the words are separated by commas. After each list of anagrams, a new line should be inserted.
+
+   4. The output words can be in any case(upper, lower, mixed)
+
+   5. Try solve without using Collection framework.

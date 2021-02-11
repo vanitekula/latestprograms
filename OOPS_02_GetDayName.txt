@@ -1,0 +1,24 @@
+A Class is given to you. Implement the following things in this class.
+
+1.Define an instance variable called "dayName". This field should be defined as a string. It should hold one of the following values "SUN, MON, TUE, WED, THU, FRI, SAT". ( Note that the values can be in upper or lower case)
+
+2.Add a accessor or getter method for this field. By convention the getter method should be written as getDayName(). This method should return the field dayName
+
+3.Add a mutator or setter method for the field. By convention the setter method should be called setDayName(String dayName). 
+
+Note that the input to this field could be one of the following: "SUN, MON, TUE, WED, THU, FRI, SAT, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday". 
+All these values are valid. In case the input is Sunday, the value should be accepted, But Stored as SUN. Similarly if the input is Friday, 
+it should be accepted but stored as FRI. If input is not valid, assign NULL to field value.NOTE that the input can be lower or upper or mixed case, and all such values should be accepted. The value must be stored in capital letters only.
+
+4.Add a public method : getNextDay(): This method should return the next day of the week. 
+If the field value is SUN, then it should return MON. If the field value is THU, it should return FRI and so on
+
+
+5.Add a public method : getPreviousDay(): This method should return the previous day of the week. 
+If the field value is SUN, then it should return SAT. If the field value is THU, it should return WED and so on
+
+
+6. Add a public method : addToCurrentDay(int noOfDays): This method should add the given number of days to the dayName and return the day of the week of the resulting day. 
+For example, if the fieldValue dayName is Sun and this method is called with input as 4, then the output should be Thu, as 4 days after Sunday is Thu. If the input is -4 output should be Wed as 4 days before Sunday is Wed.
+
+

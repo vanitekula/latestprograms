@@ -1,0 +1,16 @@
+ In the given Class DateFormatter.java, implement the method format() such that it accepts the date (date month year), separated by comma / space or both and return the date in the format format of YYYY-MM-DD.
+
+Eg.: 21,May,2012 / 21,May,2012 / 21,May,2012
+
+Output : 2012-05-21
+
+
+Note the following:
+
+   1. The input can have comma, space or both. No other separator is allowed
+
+   2. The month can be given in full form (January, February etc) or in short 3-Letter form (Jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec) . This program should accept both types.
+
+   3. Output month should always be a number in 2 digits format, like MAY as 05, November as 11
+
+   4. Return null for error in input if data provided is not according to the above mentioned details.

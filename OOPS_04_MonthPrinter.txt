@@ -1,0 +1,22 @@
+Write a program to find the first date, last date and day of Week for any given month and year. 
+
+For 0 or -ve inputs, print the first and last days for the current running month. 
+Also print the same, if year is not a 4 digit number or not a valid month number.
+ 
+
+Input will be given as month and year and output expected as per below format: 
+"first_Day_Of_Month:Day_Of_Week:Last_date_of_month:day_of_week"
+
+
+
+Example: 
+For January 2012, January 1st was a Sunday and 31st of January was a Tuesday. Hence the output should be: "1:Sunday:31:Tuesday"
+
+Similarly for June 2010, the output expected is: "1:Tuesday:30:Wednesday". Note that the output should be in Title Case.
+
+Write the method with following specifications
+
+Name of method : getMonthCalendar
+Arguments : 2 int values (1st for month number,2nd for year)
+Return Type : String
+
