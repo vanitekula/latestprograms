@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KiranConsoleApp
 {
-    class Class9
+    class CheckAdam
     {
         public static bool IsAdam(int num)
         {
