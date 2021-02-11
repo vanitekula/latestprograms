@@ -28,7 +28,7 @@ namespace OopsConsoleApp
         }
 
     }
-    class Class2
+    class OperverExample
     {
         static void Main(string[] args)
         {
