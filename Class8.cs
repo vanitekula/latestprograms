@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace KiranConsoleApp
 {
+  partial  class Bank
+    {
+        public void MiniStatement()
+        {
+            Console.WriteLine("Hi this is mini statement method from class Bank");
+        }
+    }
     class Class8
     {
 

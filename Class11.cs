@@ -29,9 +29,11 @@ namespace KiranConsoleApp
     {
         static void Main(string[] args)
         {
-            new Mover().Show(5,6);
-            new Mover().Show("aaa", "bbbb");
-            new Mover().Show(6.7, 4.5);
+
+            Mover p = new Mover();
+            p.Show(1, 2);
+            p.Show("aaa", "bbb");
+            p.Show(6.7, 8.9);
         }
     }
 }

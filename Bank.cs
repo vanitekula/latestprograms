@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace KiranConsoleApp
 {
-    class Class12
+    partial class Bank
     {
-        static void Main(string[] args)
+        public void CheckBalance()
         {
-
+            Console.WriteLine("Hi this is Check Balance method from bank class");
         }
     }
 }

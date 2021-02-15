@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace KiranConsoleApp
 {
-    class Class12
+    class PartialClassExample
     {
         static void Main(string[] args)
         {
-
+            Bank p = new Bank();
+            p.WithDraw();
+            p.CheckBalance();
+            p.MiniStatement();
         }
     }
 }

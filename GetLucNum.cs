@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace KiranConsoleApp
-{//1+9+6+1+9+9+6=>41=>5      19+6+1996=>2021=>5
+{
     class GetLucNum
     {
-        public static int GetLuckyNumber(string Dob) // "19-Jun-1996"
+        public static int GetLuckyNumber(string Dob) 
         {
             string[] res = Dob.Split('-');
             int date = int.Parse(res[0]);
@@ -23,9 +23,9 @@ namespace KiranConsoleApp
 
         }
 
-        public static int ConvertMonToNum(string month) //March
+        public static int ConvertMonToNum(string month) 
         {
-            month = month.ToLower();//march
+            month = month.ToLower();
             string[] months = {"jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec" };
             for (int i = 0; i < months.Length; i++)
             {
@@ -38,7 +38,7 @@ namespace KiranConsoleApp
         
         }
 
-        public static int GetSumOfDigits(int num)//2021
+        public static int GetSumOfDigits(int num)
         {
             int sum = 0;
             while (num > 0)
