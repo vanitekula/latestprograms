@@ -1,38 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace OopsConsoleApp
+namespace RevisionConsole
 {
-    class Employee
-    {
-       int empId;
-       string empName;  //Instance members
-       int empSal;
-       public void SetEmpInfo(int id,string ename,int esal) //Assigning the data
-        {
-            empId = id;
-            empName = ename;
-            empSal = esal;
-        }
-        public void ShowEmpInfo()
-        {
-            Console.WriteLine(empId);
-            Console.WriteLine(empName);
-            Console.WriteLine(empSal);
-        }
-    }
-
     class Program
     {
         static void Main(string[] args)
         {
-            Employee emp = new Employee();
-            emp.SetEmpInfo(111, "abc", 50000);
-            emp.ShowEmpInfo();
+            int num = 5;//1,2,3,4,5
+            int min = 1;
+            int max = num;
+           
             
+            
+            while (min<= max) // 1<=5  2<=5   3<=5    4<=5  5<=5  6<=5
+            {
+                Console.Write(min+"\n");//1   2    3    4   5
+                min = min + 1;
+            }
         }
     }
 }

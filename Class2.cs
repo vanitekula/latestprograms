@@ -1,47 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace KiranConsoleApp
+namespace RevisionConsole
 {
     class Class2
     {
         static void Main(string[] args)
         {
-            string str = "welcome";
-            Console.WriteLine(str.ElementAt(0));//result is char
-            Console.WriteLine(str.IndexOf('l'));//result is int
-            Console.WriteLine(str.Contains("me"));//boolean
-            Console.WriteLine(str.Substring(0));//string
-            Console.WriteLine(str.Substring(1));
-            Console.WriteLine(str.Substring(2));
-            Console.WriteLine(str.Length);//Integer
-            Console.WriteLine(str.Substring(0,str.Length));//string
-            Console.WriteLine(str.Substring(0, str.Length-1));
-            Console.WriteLine(str.Substring(0,str.Length-2));
-            string dob = "9-June-1996";
-            string[] res =dob.Split('-');//string array
-            Console.WriteLine(res[0]);
-            Console.WriteLine(res[1]);
-            Console.WriteLine(res[2]);
+            List<Student> slist = new List<Student>();
+            slist.AddRange(new Student[]{
+                new Student() { StudentId=11,StudentName="aaa",Marks=750},
+                new Student() { StudentId = 12, StudentName = "bbb", Marks = 450 },
+                new Student() { StudentId = 10, StudentName = "ddd", Marks = 550 }
+                }   );
 
-            Console.WriteLine("aaaa".CompareTo("aaaa"));
-            Console.WriteLine(str.Equals("elcome"));
-            Console.WriteLine(string.IsNullOrEmpty(""));
-
-
+            foreach(Student student in slist)
+            {
+                Console.WriteLine(student);
+            }
+            slist.Sort();
+            Console.WriteLine("after sorting");
+            foreach (Student student in slist)
+            {
+                Console.WriteLine(student);
+            }
 
         }
     }
 }
-
-
-
-
-
-
-
-
-

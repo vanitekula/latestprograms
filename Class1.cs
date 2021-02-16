@@ -1,21 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace KiranConsoleApp
+namespace RevisionConsole
 {
     class Class1
     {
         static void Main(string[] args)
         {
-            string s = "ojas";
-            Console.WriteLine(s);//lower ojas
-            string k = s.ToUpper();//
-            Console.WriteLine(k);
-            Console.WriteLine(s);//Upper  
-
+            int num = 5; // 1+2+3+4+5=>15
+            int min = 1;
+            int sum = 0;
+            while(min<=num) // 1<=5
+            {
+                Console.WriteLine(min);//1
+                sum = sum + min;//
+                min = min + 1;
+            }
+            Console.WriteLine("Sum is {0}",sum);
         }
     }
 }
