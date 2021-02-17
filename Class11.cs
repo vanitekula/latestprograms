@@ -4,36 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KiranConsoleApp
+namespace OopsConsoleApp
 {
-    class Mover
-    {
-        public void Show(int x,int g)
-        {
-           
-            Console.WriteLine($"{x} {g}");
-        }
-        public void Show(string x, string g)
-        {
-
-            Console.WriteLine($"{x} {g}");
-        }
-        
-        public void Show(double x, double g)
-        {
-
-            Console.WriteLine($"{x} {g}");
-        }
-    }
     class Class11
     {
+        public SortedList<char,int> CharacterOccurances(string name)//eye
+        {
+            name = name.ToUpper();
+            SortedList<char, int> charoc = new SortedList<char, int>();
+            foreach(char ch in name)//eye
+            {
+                if (charoc.ContainsKey(ch))
+                {
+                    int val = charoc[ch];
+                    charoc.Remove(ch);
+                    charoc.Add(ch, val + 1);
+                }
+                else
+                {
+                    charoc.Add(ch, 1);
+                }
+            }
+            return charoc;
+        }
         static void Main(string[] args)
         {
-
-            Mover p = new Mover();
-            p.Show(1, 2);
-            p.Show("aaa", "bbb");
-            p.Show(6.7, 8.9);
+            Console.Write("Enater a Name : ");
+            string name = Console.ReadLine();
+            foreach(KeyValuePair<char,int> keyValuePair in new Class11().CharacterOccurances(name))
+            {
+                Console.WriteLine(keyValuePair);
+            }
         }
     }
 }
