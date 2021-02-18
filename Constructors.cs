@@ -54,7 +54,7 @@ namespace OopsConsoleApp
 
         }
     }
-    class Class2
+    class Constructors
     {
         static void Main(string[] args)
         {

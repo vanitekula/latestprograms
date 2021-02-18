@@ -4,26 +4,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KiranConsoleApp
+namespace OopsConsoleApp
 {
     class Class6
     {
-        public static bool IsEven(int num)
-        {
-            if (num % 2 == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
         static void Main(string[] args)
         {
-            Console.WriteLine(IsEven(5));
-            Console.WriteLine(IsEven(4));
+            int[,] array = { {1,2,3 },{ 3, 4, 5 },{ 6, 7, 8 } };
+           for(int i=0;i<3;i++)
+            {
+                for(int j=0;j<3;j++)
+                {
+                    Console.Write(array[i,j]+"\t");
+                    
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("Diagonal elemetns of the array");
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                   if(i==j || i+j == 2)
+                    {
+                        Console.Write(array[i, j] + "\t");
+                    }
+                    else
+                    {
+                        Console.Write("\t");
+                    }
+                   
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("Other than Diagonal elemetns of the array");
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (i == j || i + j == 2)
+                    {
+                        Console.Write("\t");
+                        
+                    }
+                    else
+                    {
+                        Console.Write(array[i, j] + "\t");
+                    }
+
+                }
+                Console.WriteLine();
+            }
         }
     }
 }

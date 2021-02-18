@@ -21,7 +21,7 @@ namespace OopsConsoleApp
             Console.WriteLine("Mul is : {0}", x*y);
         }
     }
-    class SciCaly:BasicCalcy
+  sealed  class SciCaly:BasicCalcy
     {
         public void Cos(int x)
         {
@@ -32,7 +32,7 @@ namespace OopsConsoleApp
             Console.WriteLine(Math.Sin(x));
         }
     }
-    class Class3
+    class SingleInheritance
     {
         static void Main(string[] args)
         {
@@ -40,6 +40,7 @@ namespace OopsConsoleApp
             s.Cos(0);
             s.Sine(90);
             s.Sum(6, 2);
+            s.Sub(8, 4);
             
         }
     }

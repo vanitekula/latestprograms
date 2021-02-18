@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OopsConsoleApp
 {
-    class Class5
+    class ExceptionHandling
     {
         static void Main(string[] args)
         {
@@ -18,6 +18,10 @@ namespace OopsConsoleApp
                     int num1 = int.Parse(Console.ReadLine());
                     Console.Write("Enter Number2 : ");
                     int num2 = int.Parse(Console.ReadLine());
+                    if (num2 == 0)
+                    {
+                        throw new DivideByZeroException("Hello I am Divide");
+                    }
                     Console.WriteLine(num1 + num2);
                     Console.WriteLine(num1 / num2);
                 }
@@ -27,12 +31,16 @@ namespace OopsConsoleApp
                 }
                 catch(DivideByZeroException dx)
                 {
-                    Console.WriteLine("num2 can't be zero");
+                    Console.WriteLine("num2 can't be zero "+dx.Message);
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                     Console.WriteLine(ex.GetType());
+                }
+                finally
+                {
+                    Console.WriteLine("Thanku visit Again......");
                 }
               
             }

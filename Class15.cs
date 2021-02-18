@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.IO;
 namespace OopsConsoleApp
 {
-    class Class8
+    class Class15
     {
         static void Main(string[] args)
         {
-            string str1 = "abc";
-            string str2 = "def";
+            Console.Write("Enter Drive Name : ");
            
+            foreach (string s in Directory.GetDirectories(Console.ReadLine()))
+            {
+                Console.WriteLine(s);
+            }
+
         }
     }
 }
